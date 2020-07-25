@@ -1513,7 +1513,7 @@
                 };
                 var z = e.$el.find(".vsubmit"),
                     L = function(t) {
-                        if (e.config.requiredFields.indexOf("nick") > -1 && E.nick.length < 3) return v.nick[0].focus(), void e.$el.find(".status-bar").text("" + e.i18n.t("nickFail")).empty(3e3);
+                        if (e.config.requiredFields.indexOf("nick") > -1 && E.nick.length < 1) return v.nick[0].focus(), void e.$el.find(".status-bar").text("" + e.i18n.t("nickFail")).empty(3e3);
                         if (e.config.requiredFields.indexOf("mail") > -1 && !/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(E.mail)) return v.mail[0].focus(), void e.$el.find(".status-bar").text("" + e.i18n.t("mailFail")).empty(3e3);
                         if ("" == j) return void v.comment[0].focus();
                         E.comment = j, E.nick = E.nick || "Anonymous";

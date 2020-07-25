@@ -2592,7 +2592,7 @@
                             var r = this.options.highlight(e, t);
                             null != r && r !== e && (n = !0, e = r)
                         }
-                        return t ? '<pre><code class="' + this.options.langPrefix + s(t, !0) + '">' + (n ? e : s(e, !0)) + "</code></pre>\n" : "<pre><code>" + (n ? e : s(e, !0)) + "</code></pre>"
+                        return t ? '<pre style="font-size:18px"><code class="' + this.options.langPrefix + s(t, !0) + '">' + (n ? e : s(e, !0)) + "</code></pre>\n" : "<pre><code>" + (n ? e : s(e, !0)) + "</code></pre>"
                     }, o.prototype.blockquote = function(e) {
                         return "<blockquote>\n" + e + "</blockquote>\n"
                     }, o.prototype.html = function(e) {
